@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasa</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+        color: white;
+        font-family: Roboto;
+      }
+      .parent {
+        width: 100%;
+        background: linear-gradient(90deg, #300505, #db1e1e);
+      }
+      .navbar {
+        width: 100%;
+        height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 30px;
+        background-color: black;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+
+        gap: 30px;
+      }
+
+      .hero {
+        width: 100%;
+        height: 540px;
+        display: flex;
+        align-items: center;
+
+        padding-left: 20px;
+      }
+
+      .footer {
+        width: 100%;
+        height: 120px;
+      }
+
+      .search {
+        font-size: 16px;
+        background-color: black;
+        border: 1px solid rgb(112, 108, 108);
+        padding: 5px;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
+      }
+
+      .nav-3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .live {
+        border: 1px solid rgb(177, 41, 41);
+        font-size: 12px;
+        padding: 2px;
+        letter-spacing: 1px;
+      }
+
+      .hero-h1 {
+        font-size: 80px;
+      }
+
+      .hero-p {
+        font-size: 17px;
+      }
+
+      .hero-btn {
+        background-color: rgb(194, 48, 48);
+        border: none;
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .card-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(90deg, #300505, #db1e1e);
+      }
+
+      .card {
+        flex: 1;
+        margin: 20px;
+        border-top: 1px solid #666;
+        padding-top: 10px;
+      }
+
+      .card h5 {
+        font-size: 12px;
+        color: #c2bdbd;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+      }
+
+      .card span {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="navbar">
+        <div class="nav-left">
+          <h2 class="nav-h2">Explore</h2>
+
+          <input class="search" type="text" placeholder="Search" />
+        </div>
+        <div class="nav-center">
+          <img class="logo" src="nasa-logo.svg" alt="nasa-logo" />
+        </div>
+
+        <div class="nav-right">
+          <h3>News & Events</h3>
+          <h3>Multimedia</h3>
+          <div class="nav-3">
+            <h3>NASA +</h3>
+            <p class="live">LIVE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div>
+          <h1 class="hero-h1">
+            For the Benefits of<br />
+            All
+          </h1>
+          <p class="hero-p">
+            NASA investigates the unknown in air and space, innovates for the
+            benefit of<br />
+            humanity, and inspires the world through discovery.
+          </p>
+          <br />
+          <button class="hero-btn">NASA Missions</button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="card-section">
+          <div class="card">
+            <h5>CREWED LUNAR FLYBY</h5>
+            <br />
+            <span>Artemis II </span>
+          </div>
+          <div class="card">
+            <h5>PLANETARY DEFENSE</h5>
+            <br />
+            <span>NEO Surveyor</span>
+          </div>
+          <div class="card">
+            <h5>COSMIC WONDERS</h5>
+            <br />
+            <span>Nancy Grace Roman Space Telescope </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
